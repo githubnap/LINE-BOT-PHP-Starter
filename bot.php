@@ -22,16 +22,7 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 			
-			ff();
-			
-		}
-	}
-}
-echo "OK0";
-
-
-function ff() {
-// Make a POST Request to Messaging API to reply to sender
+			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
@@ -50,5 +41,8 @@ function ff() {
 			curl_close($ch);
 
 			echo $result . "\r\n";
-
+			
+		}
+	}
 }
+echo "OK";
