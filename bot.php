@@ -1,6 +1,3 @@
-<?php
-$access_token = 'bunEtABuosdTDuwUg/P/WlxL2pIDxEJnte1oxZbaC+W4JCuDnIZjC+J2LDUT16+Z1iGTB6wBT9jsi0LMAseTNbAhMIhaaxfPTvGZVMpOOM1VEtkpi/ptL8jAToS0RL4AK1tbiROMLLsqYunPHiR0FQdB04t89/1O/w1cDnyilFU=';
-
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -19,10 +16,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text': 'Hello'
+				'text' => $text
 			];
-			
-		
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
@@ -46,4 +41,4 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "OK_1";
+echo "OK";
