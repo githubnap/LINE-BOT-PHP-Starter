@@ -22,14 +22,16 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 			
-			$messages = [
-				    "type"=> "image",
-				    "originalContentUrl"=> "http://i3.wallpaperscraft.com/image/lamborghini_aventador_blue_front_view_100493_1024x1024.jpg",
-				    "previewImageUrl"=> "http://i3.wallpaperscraft.com/image/lamborghini_aventador_blue_front_view_100493_1024x1024.jpg"
-			];
+			ff();
 			
+		}
+	}
+}
+echo "OK0";
 
-			// Make a POST Request to Messaging API to reply to sender
+
+function ff() {
+// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
@@ -48,7 +50,5 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
-		}
-	}
+
 }
-echo "OK1";
