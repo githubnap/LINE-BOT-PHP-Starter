@@ -23,8 +23,9 @@ if (!is_null($events['events'])) {
 			];
 			
 			$messages = [
-				"type"=> "text",
-    				"text"=> "Hello, world"
+				    "type"=> "image",
+				    "originalContentUrl"=> "http://i3.wallpaperscraft.com/image/lamborghini_aventador_blue_front_view_100493_1024x1024.jpg",
+				    "previewImageUrl"=> "http://i3.wallpaperscraft.com/image/lamborghini_aventador_blue_front_view_100493_1024x1024.jpg"
 			];
 			
 
