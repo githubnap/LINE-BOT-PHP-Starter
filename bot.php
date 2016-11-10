@@ -23,8 +23,8 @@ if (!is_null($events['events'])) {
 			];
 			
 			$messages = [
-				'type'=> 'text',
-    				'text'=> 'Hello, world'
+				"type"=> "text",
+    				"text"=> "Hello, world"
 			];
 			
 
@@ -50,4 +50,4 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "OK1";
+echo "OK2";
