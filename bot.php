@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
 			
 			$messages = [
 				'type' => 'text',
-				"text" => "Hi Nap"
+				"text": "Hello, world"
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
@@ -49,4 +49,4 @@ if (!is_null($events['events'])) {
 		}
 	}
 }
-echo "OK2";
+echo "OK3";
